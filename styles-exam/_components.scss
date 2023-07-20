@@ -1,0 +1,172 @@
+.header {
+    @include parent_width;
+    display: block;
+    background-color: #1d1d1d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    padding: 0 15px;
+    color: white;
+    z-index: 1;
+}
+
+body {
+    @include parent_width;
+    min-height: 300vh;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+.hero-section-wrapper {
+    @include parent_width;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > .starter {
+        font-size: 25px;
+        padding-right: 460px;
+        padding-top: 280px;
+        z-index: 1;
+    }
+    > h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 8rem;
+        padding-right: 300px;
+        color: white;
+        z-index: 1;
+    }
+}
+
+.hero-section-wrapper::after {
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(29, 29, 29, 0.3);
+}
+
+.background-image {
+    background-image: url('../assets-exam/images/hero-section-wrapper.jpeg');
+    background-size: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.profile-picture {
+    margin: 15px auto;
+    margin-bottom: 5px;
+    display: block;
+    width: 110px;
+    border: 4px solid #f9bc76;
+    border-radius: 50%;
+}
+
+.social-navigation {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 22px;
+}
+
+.general-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 20px;
+    min-height: 30vh;
+    justify-content:space-around;
+}
+
+.general-list > a > li > i {
+    padding-right: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.about {
+    @include parent_width;
+    padding-top: 20px;
+    padding-left: 315px;
+}
+
+.about-text {
+    padding: 0 0 30px;
+}
+
+.about-detail {
+    display: flex;
+}
+
+.lists {
+    @include flex-mode;
+    > .about-list {
+        justify-content: space-around;
+        > li {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.picture3 {
+    margin: 15px 0;
+    margin-bottom: 5px;
+    width: 150px;
+    box-shadow: 5px 10px #f3a94f;
+}
+
+.about-detail-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    > h3 {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+}
+
+.about-list {
+    padding: 15px 5px;
+    list-style-type:circle;
+
+}
+.resume {
+    @include parent_width;
+    padding-top: 20px;
+    padding-left: 315px;
+}
+
+.portfolio {
+    @include parent_width;
+    padding-top: 20px;
+    padding-left: 315px;
+}
