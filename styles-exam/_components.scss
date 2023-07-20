@@ -159,14 +159,31 @@ a {
     list-style-type:circle;
 
 }
-.resume {
-    @include parent_width;
-    padding-top: 20px;
-    padding-left: 315px;
-}
 
 .portfolio {
     @include parent_width;
     padding-top: 20px;
     padding-left: 315px;
+}
+
+
+.footer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9bc76;
+}
+
+.pic-container {
+    display:inline-flex;
+    grid-gap: 25px;
+    align-items: center;
+}
+
+.sample1 {
+    margin: 15px auto;
+    margin-bottom: 5px;
+    display: block;
+    width: 200px;
+    border: 2px solid #f9bc76;
+    margin-bottom: 20px;
 }
